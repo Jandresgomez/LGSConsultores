@@ -2,3 +2,4 @@
 /py3
 /config
 /website/local_settings.py
+/static
