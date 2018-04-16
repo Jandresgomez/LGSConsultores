@@ -125,7 +125,20 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Static files ROOT
+# Got this from https://stackoverflow.com/questions/36760549/python-django-youre-using-the-staticfiles-app-without-having-set-the-static-ro
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# Static files directories
+# Got this from https://docs.djangoproject.com/en/2.0/howto/static-files/
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "website/static"),
+]
+
 
 # Lines recommended from django on heroku tutorial
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
+
