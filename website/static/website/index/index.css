@@ -1,10 +1,15 @@
 #slogan {
-	margin-left: 20%;
-    margin-right: 20%;
+	margin-left: 10%;
+    margin-right: 10%;
+}
+
+#quienesSomosTitle {
+	text-align: center;
 }
 
 #quienesSomosIMG {
 	max-height: 30%;
 	width: 50%;
 	height: auto;
+	align-self: center;
 }

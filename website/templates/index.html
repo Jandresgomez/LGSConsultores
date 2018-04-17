@@ -9,30 +9,32 @@
   <link rel="stylesheet" href="{% static 'website/index/index.css' %}">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 </head>
 <body>
-
-<div class="jumbotron text-center">
-  <h1 id="mainTitle">LGS Consultores</h1>
-  <div class="wrapper" id="slogan">
-    <p>Resolvemos el problema de recobro de incapacidades y mejoramos el ambiente laboral de las empresas de medianoy gran tamaño</p> 
+<div ng-app="myApp">
+  <div class="jumbotron text-center">
+    <h1 id="title">LGS Consultores</h1>
+    <div class="wrapper" id="slogan">
+      <p>Resolvemos el problema de recobro de incapacidades y mejoramos el ambiente laboral de las empresas de mediano y gran tamaño</p> 
+    </div>
   </div>
-</div>
-  
-<div class="container">
-  <div>
-    <h2>¿Quienes somos?</h2>
-    <img src="{% static "website/index/quienesSomos.jpg" %}" alt="My image" id="quienesSomosIMG"/>
-  </div>
-  <div>
-    <h3>Column 2</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-  </div>
-  <div>
-    <h3>Column 3</h3>        
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    
+  <div class="quienesSomos">
+    <div>
+      <h2 id="quienesSomosTitle">¿Quienes somos?</h2>
+      <img src="{% static "website/index/quienesSomos.jpg" %}" alt="My image" id="quienesSomosIMG"/>
+    </div>
+    <div>
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div>
+      <h3>Column 3</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
   </div>
 </div>
 
