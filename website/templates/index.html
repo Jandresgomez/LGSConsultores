@@ -4,15 +4,26 @@
 <head>
   <title>LGS Consultores</title>
   <meta charset="utf-8">
+  <!-- viewport for dynamic scale of website -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="{% static 'website/index/index.css' %}">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+
+  <!-- Angular JS and Router -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{% static 'website/index/index.css' %}">
+
+  <!-- Angular controllers -->
+  <script src={% static "website/index/indexCtrl.js"%}></script>
 </head>
 <body>
-<div ng-app="myApp">
+<div ng-app="myApp" ng-controller="indexCtrl">
   <div class="jumbotron text-center">
     <h1 id="title">LGS Consultores</h1>
     <div class="wrapper" id="slogan">
