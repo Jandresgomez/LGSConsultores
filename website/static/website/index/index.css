@@ -3,9 +3,32 @@
     margin-right: 10%;
 }
 
+#fillerBar {
+	width: 100%;
+	height: auto;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#fillerBar li {
+	float: right;
+}
+
+#fillerBar li a {
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
 #menuBar {
 	position: fixed;
 	width: 100%;
+	height: auto;
 	list-style-type: none;
     margin: 0;
     padding: 0;
@@ -31,7 +54,6 @@
 
 .sticky {
   position: fixed;
-  top: 0;
   width: 100%
 }
 
@@ -46,12 +68,21 @@
 	align-self: center;
 }
 
-#headerRow {
-	display: inline-flex;
+#menuFiller {
+	height: 80px;
 }
 
 #logoDiv {
+	width: calc(100%/6);
 	margin: auto;
+}
+
+#logoFiller {
+	width: calc(100%/6);
+}
+
+#sloganHolder {
+	width: calc(2*100%/3);
 }
 
 #logoIMG {
@@ -61,6 +92,7 @@
 }
 
 #headerRow {
+	display: inline-flex;
 	margin-top: auto;
 	margin-bottom: 2%;
 	margin-left: auto;

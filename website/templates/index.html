@@ -25,25 +25,28 @@
   <!-- JS Functions -->
 </head>
 <body>
-<ul id="menuBar">
-  <li><a href="#!">Inicio</a></li>
-  <li><a href="#!registrarIncapacidad">Registrar incapacidad</a></li>
-  <li><a href="#!verIncapacidades">Ver incapacidades</a></li>
-  <li><a href="#!analisis">Analisis de datos</a></li>
-</ul>
 <div ng-app="myApp" ng-controller="indexCtrl">
+  <ul id="menuBar">
+    <li><a href="#!">Inicio</a></li>
+    <li><a href="#!registrarIncapacidad">Registrar incapacidad</a></li>
+    <li><a href="#!verIncapacidades">Ver incapacidades</a></li>
+    <li><a href="#!analisis">Analisis de datos</a></li>
+  </ul>
+  <ul id="fillerBar">
+    <li><a href="#!">Inicio</a></li>
+  </ul>
   <div class="jumbotron text-center" id="header">
-    <div class="row" id="headerRow">
-      <div class="col-md-2" id="logoDiv">
+    <div id="headerRow">
+      <div id="logoDiv">
         <img src="{% static "website/index/Logo.png" %}" alt="Logo" id="logoIMG"/>
       </div>
-      <div class="col-md-8">
+      <div id="sloganHolder">
         <h1 id="mainTitle">LGS Consultores</h1>
         <div class="wrapper">
           <p id="slogan">Resolvemos el problema de recobro de incapacidades y mejoramos el ambiente laboral de las empresas de mediano y gran tamaño</p>
         </div> 
       </div>
-      <div class="col-md-2"></div>
+      <div id="logoFiller"></div>
     </div>
   </div>
   <div id="mainView" ng-view></div>
