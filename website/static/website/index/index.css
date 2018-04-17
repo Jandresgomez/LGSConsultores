@@ -1,6 +1,6 @@
 #slogan {
-	margin-left: 15%;
-    margin-right: 15%;
+	margin-left: 10%;
+    margin-right: 10%;
 }
 
 #quienesSomosTitle {
@@ -16,4 +16,15 @@
 
 #header {
   margin-bottom: 0px;
+}
+
+#logoIMG {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-top: auto;
+
+	max-height: 50%;
+	width: 50%;
+	height: auto;
 }
