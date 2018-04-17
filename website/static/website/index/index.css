@@ -3,7 +3,9 @@
     margin-right: 10%;
 }
 
-#menu {
+#menuBar {
+	position: fixed;
+	width: 100%;
 	list-style-type: none;
     margin: 0;
     padding: 0;
@@ -11,11 +13,11 @@
     background-color: #333;
 }
 
-#menu li {
+#menuBar li {
 	float: right;
 }
 
-#menu li a {
+#menuBar li a {
 	display: block;
     color: white;
     text-align: center;
@@ -23,7 +25,7 @@
     text-decoration: none;
 }
 
-#menu li a:hover {
+#menuBar li a:hover {
     background-color: #111;
 }
 
@@ -76,19 +78,10 @@
 	padding: 5px;
 }
 
-#div2 p {
-	font-size: 200%;
+#mainView {
+	padding: 2%;
 }
 
-/* CSS to make sticky menu bar*/
-.content {
-  padding: 16px;
-}
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
-.sticky + .content {
-  padding-top: 60px;
+#div2 p {
+	font-size: 200%;
 }
