@@ -13,3 +13,7 @@
 	height: auto;
 	align-self: center;
 }
+
+#header {
+  margin-bottom: 0px;
+}
