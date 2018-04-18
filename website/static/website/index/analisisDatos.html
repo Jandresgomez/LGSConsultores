@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+  <script>
+window.onload = function() {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+  animationEnabled: true,
+  title: {
+    text: "Motivos Incapacidades Registradas"
+  },
+  data: [{
+    type: "pie",
+    startAngle: 240,
+    yValueFormatString: "##0.00\"%\"",
+    indexLabel: "{label} {y}",
+    dataPoints: [
+      {y: 50, label: "Dolor de Espalda"},
+      {y: 20, label: "Resfriado Común"},
+      {y: 10, label: "Fractura de Pierna"}
+    ]
+  }]
+});
+chart.render();
+
+}
+</script>
+<div>
+    <h2>Análisis y Estadísticas</h2>
+    <br>
+    <div class="container">
+      <h2>Análisis Financiero</h2>
+      <p>Hasta el momento, se han recobrado: $10.000.000</p>
+    </div>
+
+    <div class="container">
+      <h2>Análisis Datos de las Incapacidades</h2>
+      <p> Gráfico de las </p>
+      <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+      <br>
+      <p>El mótivo de incapacidad más común es: Dolor de Espalda</p>
+    </div>
+</div>
+
+</body>
+</html>
