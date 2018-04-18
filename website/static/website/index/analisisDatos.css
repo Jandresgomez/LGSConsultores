@@ -1,0 +1,30 @@
+.bordes{
+  height: 90px;
+  margin-top:10px;
+  border: #cdcdcd medium solid;
+}
+
+.dato{
+  color: green;
+  font-size: 18px;
+  margin-left: 30%;
+  
+}
+
+#dolorEspalda{
+  color: red;
+}
+
+#causaComun{
+  margin-top: 10px;
+  font-size: 18px;
+  
+}
+
+#graficos{
+   margin-top:10px;
+   border: #cdcdcd medium solid;
+   border-radius: 10px;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+}

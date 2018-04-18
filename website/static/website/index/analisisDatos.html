@@ -1,51 +1,85 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-</head>
-<body>
-  <script>
-window.onload = function() {
+<div>  
+  <div class="container">
+    <script>
+      window.onload = function() {
 
-var chart = new CanvasJS.Chart("chartContainer", {
-  animationEnabled: true,
-  title: {
-    text: "Motivos Incapacidades Registradas"
-  },
-  data: [{
-    type: "pie",
-    startAngle: 240,
-    yValueFormatString: "##0.00\"%\"",
-    indexLabel: "{label} {y}",
-    dataPoints: [
-      {y: 50, label: "Dolor de Espalda"},
-      {y: 20, label: "Resfriado Común"},
-      {y: 10, label: "Fractura de Pierna"}
-    ]
-  }]
-});
-chart.render();
+        var chart = new CanvasJS.Chart("chartContainer", {
+          animationEnabled: true,
+          title: {
+            text: "Motivos Incapacidades Registradas"
+          },
+          data: [{
+            type: "pie",
+            startAngle: 240,
+            yValueFormatString: "##0.00\"%\"",
+            indexLabel: "{label} {y}",
+            dataPoints: [
+              {y: 50, label: "Dolor de Espalda"},
+              {y: 20, label: "Resfriado Común"},
+              {y: 10, label: "Fractura de Pierna"}
+            ]
+          }]
+        });
+        chart.render();
 
-}
-</script>
-<div>
-    <h2>Análisis y Estadísticas</h2>
-    <br>
-    <div class="container">
-      <h2>Análisis Financiero</h2>
-      <p>Hasta el momento, se han recobrado: $10.000.000</p>
-    </div>
-
-    <div class="container">
-      <h2>Análisis Datos de las Incapacidades</h2>
-      <p> Gráfico de las </p>
-      <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+        }
+    </script>
+    <div>
+      <h2>Análisis y Estadísticas</h2>
       <br>
-      <p>El mótivo de incapacidad más común es: Dolor de Espalda</p>
-    </div>
-</div>
+        <div class="container">
+          <div class="row">
+          <h2>Análisis Financiero</h2>
+            <div class="col-md-4 bordes">
+        
+              <p>Hasta el momento, se han recobrado:</p>
+              <p class="dato">$3.500.500</p>
+            </div>
+            <div class="col-md-4 bordes">
+        
+              <p>En promedio, el recobro de una incapacidad ha tardado:</p>
+              <p class="dato">60 días</p>
+            </div>
+            <div class="col-md-4 bordes">
+        
+              <p>Hasta el momento, se han incapacitado:</p>
+              <p class="dato"> 6 empleados</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container">
+          <h2>Análisis Datos de las Incapacidades</h2>
+          <div class="row" id="graficos">
+      
+          <br>
+            <div class="col-md-6">
+              <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+            </div>
+        
+            <div class="col-md-6">
+      
+              <p id="causaComun">El mótivo de incapacidad más común es: <span id="dolorEspalda">Dolor de Espalda</span></p>
+              <br>
+              <ul class="list-group">
+                <h4>Posibles Causas:</h4>
+                <li class="list-group-item">Sillas poco ergonómicas</li>
+                <li class="list-group-item">Manejo inadecuado de pesos muy altos</li>
+                <li class="list-group-item">Exposición a vibraciones</li>
+              </ul>
+          
+            </div> 
+                    
+      
+      
+          </div>
+      
+      </div>
+    </div>  
+  
 
-</body>
-</html>
+  
+  </div>  
+  <br>
+  
+</div> 
