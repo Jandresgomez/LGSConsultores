@@ -1,1 +1,50 @@
-<h1>Registrar incapacidad</h1>
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+	<h2>Formulario de incapacidad</h2>
+	<div style="float: left; width: 400px;">
+		<form action="/enviar.php">
+			First name:<br>
+			<input type="text" name="cedula" value="cedula">
+			<br>
+			<br>
+			<select name="eps">
+				<option value="seleccionar...">seleccionar...</option>
+				<option value="Compensar">Compensar</option>
+				<option value="Sura">Sura</option>
+			</select>
+			<br>  <br>
+			Codigo de Incapacidad
+			<br>
+			<input type="text" name="codigo Incapacidad" value="codigo">
+			<br> <br>
+			<div style="float: left; width: 200px;">
+				Fecha Inicio <br>
+				<input type="date" name="Fecha_i">
+			</div>
+			<div style="float: left">
+				Fecha Fin <br>
+				<input type="date" name="Fecha_f">
+				<br><br>
+			</div>
+		</div>
+		<div style="float: left; width: 200px;">
+			Cedula Fotocopiada al 150% :
+			<input type="file" name="fotocopiaCedula" accept=".pdf|image/*">
+			<br><br>
+			incapacidad:
+			<input type="file" name="fotocopiaCedula" accept=".pdf|image/*">
+			<br><br>
+			Expediente Medico:
+			<input type="file" name="exoediente" accept=".pdf|image/*">
+			<br><br>
+			<input type="submit" value="crear">
+			<br><br>
+		</div>
+
+	</form> 
+</body>
+</html>
