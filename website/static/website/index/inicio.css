@@ -32,7 +32,7 @@
 	display: inline-flex;
 }
 
-#wrappeRS {
+#wrapperRS {
 	padding-left: 3%;
 	width: 50%;
 }
@@ -52,17 +52,41 @@
 	display: inline-flex;
 }
 
-#wrappeRR {
+#wrapperRR {
+	margin-left: 10%;
 	padding-right: 3%;
-	width: 35%;
+	width: 50%;
 	float: right;
 }
 
 #registroIMG {
 	width: 55%;
 	height: auto;
+	float: left;
 }
 
 #wrapperIMGRR {
-	width: auto;
+	width: 35%;
+}
+
+#rowAnalisis {
+	width: 100%;
+	display: inline-flex;
+}
+
+#wrapperRA {
+	margin-left: 10%;
+	padding-right: 3%;
+	width: 50%;
+	float: right;
+}
+
+#wrapperIMGRA {
+	width: 35%;
+}
+
+#analisisIMG {
+	width: 55%;
+	height: auto;
+	float: left;
 }
