@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-</head>
 <body>
 
 	<h2>Formulario de incapacidad</h2>
-	<div style="float: left; width: 400px;">
+	<div id="divFormInc">
 		<form action="/enviar.php">
 			First name:<br>
 			<input type="text" name="cedula" value="cedula">
@@ -21,25 +17,25 @@
 			<br>
 			<input type="text" name="codigo Incapacidad" value="codigo">
 			<br> <br>
-			<div style="float: left; width: 200px;">
+			<div id="formFechaInicio">
 				Fecha Inicio <br>
-				<input type="date" name="Fecha_i">
+				<input type="date" name="fecha_inicio">
 			</div>
-			<div style="float: left">
+			<div>
 				Fecha Fin <br>
-				<input type="date" name="Fecha_f">
+				<input type="date" name="fecha_final">
 				<br><br>
 			</div>
 		</div>
-		<div style="float: left; width: 200px;">
+		<div id="formFiles">
 			Cedula Fotocopiada al 150% :
 			<input type="file" name="fotocopiaCedula" accept=".pdf|image/*">
 			<br><br>
-			incapacidad:
-			<input type="file" name="fotocopiaCedula" accept=".pdf|image/*">
+			Incapacidad:
+			<input type="file" name="incapacidad" accept=".pdf|image/*">
 			<br><br>
 			Expediente Medico:
-			<input type="file" name="exoediente" accept=".pdf|image/*">
+			<input type="file" name="expediente" accept=".pdf|image/*">
 			<br><br>
 			<input type="submit" value="crear">
 			<br><br>
@@ -47,4 +43,3 @@
 
 	</form> 
 </body>
-</html>
