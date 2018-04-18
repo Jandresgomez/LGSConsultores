@@ -32,9 +32,9 @@
   <div ng-app="myApp" ng-controller="indexCtrl">
     <ul id="menuBar">
       <li><a href="#!">Inicio</a></li>
-      <li><a href="#!registrarIncapacidad">Registrar incapacidad</a></li>
-      <li><a href="admin">Ver incapacidades</a></li>
-      <li><a href="#!analisis">Analisis de datos</a></li>
+      <li><a href="admin">Registrar incapacidad</a></li>
+      <li><a href="#!verIncapacidades">Ver incapacidades</a></li>
+      <li><a href="#!analisis" onclick="chart();">Analisis de datos</a></li>
     </ul>
     <ul id="fillerBar">
       <li><a href="#!">Inicio</a></li>
@@ -55,11 +55,8 @@
     </div>
     <div id="mainView" ng-view></div>
   </div>
-</body>
-
-<script>
-    window.onload = function() {
-
+  <script type="text/javascript">
+    function chart() {
       var chart = new CanvasJS.Chart("chartContainer", {
         animationEnabled: true,
         title: {
@@ -78,9 +75,7 @@
         }]
       });
       chart.render();
-
     }
   </script>
-
-
+</body>
 </html>
