@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['127.0.0.1', 'lgs-consultores.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'recobros.apps.RecobrosConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
