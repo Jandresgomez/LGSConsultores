@@ -16,12 +16,12 @@
   margin-bottom: 20px;
 }
 
-.servicios{
+.servicio{
   margin-top: 20px;
   border: 5px solid #cecece;
 }
 
-.desc {
+#wrapper p {
     text-align: justify;
     text-justify: inter-word;
 }
