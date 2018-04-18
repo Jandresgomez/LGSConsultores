@@ -26,46 +26,31 @@
   <!-- JS Functions -->
 </head>
 <body>
-<div ng-app="myApp" ng-controller="indexCtrl">
-  <ul id="menuBar">
-    <li><a href="#!">Inicio</a></li>
-    <li><a href="#!registrarIncapacidad">Registrar incapacidad</a></li>
-    <li><a href="#!verIncapacidades">Ver incapacidades</a></li>
-    <li><a href="#!analisis">Analisis de datos</a></li>
-  </ul>
-  <ul id="fillerBar">
-    <li><a href="#!">Inicio</a></li>
-  </ul>
-  <div class="jumbotron text-center" id="header">
-    <div id="headerRow">
-      <div id="logoDiv">
-        <img src="{% static "website/index/Logo.png" %}" alt="Logo" id="logoIMG"/>
+  <div ng-app="myApp" ng-controller="indexCtrl">
+    <ul id="menuBar">
+      <li><a href="#!">Inicio</a></li>
+      <li><a href="#!registrarIncapacidad">Registrar incapacidad</a></li>
+      <li><a href="#!verIncapacidades">Ver incapacidades</a></li>
+      <li><a href="#!analisis">Analisis de datos</a></li>
+    </ul>
+    <ul id="fillerBar">
+      <li><a href="#!">Inicio</a></li>
+    </ul>
+    <div class="jumbotron text-center" id="header">
+      <div id="headerRow">
+        <div id="logoDiv">
+          <img src="{% static "website/index/Logo.png" %}" alt="Logo" id="logoIMG"/>
+        </div>
+        <div id="sloganHolder">
+          <h1 id="mainTitle">LGS Consultores</h1>
+          <div class="wrapper">
+            <p id="slogan">Resolvemos el problema de recobro de incapacidades y mejoramos el ambiente laboral de las empresas de mediano y gran tamaño</p>
+          </div> 
+        </div>
+        <div id="logoFiller"></div>
       </div>
-      <div id="sloganHolder">
-        <h1 id="mainTitle">LGS Consultores</h1>
-        <div class="wrapper">
-          <p id="slogan">Resolvemos el problema de recobro de incapacidades y mejoramos el ambiente laboral de las empresas de mediano y gran tamaño</p>
-        </div> 
-      </div>
-      <div id="logoFiller"></div>
     </div>
+    <div id="mainView" ng-view></div>
   </div>
-  <div id="mainView" ng-view></div>
-  <div id="div2">
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar nisl sit amet libero iaculis ullamcorper. Duis libero ligula, eleifend in felis consectetur, sodales tincidunt lorem. Suspendisse in velit faucibus lorem lobortis sagittis. Donec eu diam vehicula, tincidunt enim nec, cursus lacus. In a tristique mauris. Sed rhoncus lacinia magna a feugiat. Nam pulvinar, eros quis porta hendrerit, arcu risus auctor tortor, sed pharetra justo magna ut eros. Aenean lobortis viverra tortor, ac congue ipsum. Vestibulum a imperdiet nisl, sit amet rutrum ipsum. Aliquam in congue enim, non cursus odio. In imperdiet pellentesque enim eget faucibus. Mauris suscipit arcu id euismod euismod. Integer finibus felis ut finibus bibendum.
-      </p>
-      <p>
-      Proin pulvinar sed nunc eget viverra. Etiam blandit sapien non ligula egestas, vel efficitur mi accumsan. Fusce a lectus vitae risus rutrum hendrerit. Suspendisse consequat velit quis ipsum elementum, non lobortis nunc mollis. Mauris vel tortor euismod, pretium risus nec, tempus sapien. Morbi non ornare massa, nec malesuada arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer luctus massa sapien, porta lacinia dolor viverra maximus. In finibus nisl erat, eget ultricies nunc accumsan eu. Maecenas sem libero, interdum nec risus a, aliquet dapibus ex. Mauris euismod vehicula nisl at bibendum. Suspendisse aliquet, dolor sed placerat hendrerit, neque ex feugiat tellus, quis varius nunc erat quis nisi. Morbi quis elementum eros. Curabitur a mattis metus, eget euismod enim. Donec vel eros in enim sollicitudin pulvinar.
-      </p>
-      <p>
-      Etiam tempor enim tristique turpis venenatis, nec feugiat mauris porttitor. Sed vitae elit mattis, accumsan mauris fermentum, faucibus orci. Vivamus consequat justo ut metus iaculis ultrices. Vivamus eu convallis neque. Phasellus imperdiet scelerisque nisi vel accumsan. Quisque a est velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mi sit amet eros ultrices consectetur. Etiam euismod nunc eu rutrum dictum. Mauris viverra, massa non sagittis lacinia, odio nibh congue tortor, sit amet fringilla leo massa interdum mauris.
-      </p>
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar nisl sit amet libero iaculis ullamcorper. Duis libero ligula, eleifend in felis consectetur, sodales tincidunt lorem. Suspendisse in velit faucibus lorem lobortis sagittis. Donec eu diam vehicula, tincidunt enim nec, cursus lacus. In a tristique mauris. Sed rhoncus lacinia magna a feugiat. Nam pulvinar, eros quis porta hendrerit, arcu risus auctor tortor, sed pharetra justo magna ut eros. Aenean lobortis viverra tortor, ac congue ipsum. Vestibulum a imperdiet nisl, sit amet rutrum ipsum. Aliquam in congue enim, non cursus odio. In imperdiet pellentesque enim eget faucibus. Mauris suscipit arcu id euismod euismod. Integer finibus felis ut finibus bibendum.
-      </p>
-    </div>
-</div>
-
 </body>
 </html>
