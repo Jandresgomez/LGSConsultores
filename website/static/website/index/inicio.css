@@ -21,7 +21,7 @@
   border: 5px solid #cecece;
 }
 
-p {
+.desc {
     text-align: justify;
     text-justify: inter-word;
 }
