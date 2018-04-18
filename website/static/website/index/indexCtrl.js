@@ -13,6 +13,6 @@ app.config(function($routeProvider) {
         templateUrl : "/static/website/index/verIncapacidades.html"
     })
     .when("/analisis", {
-        templateUrl : "/static/website/index/analisis.html"
+        templateUrl : "/static/website/index/analisisDatos.html"
     });
 });
