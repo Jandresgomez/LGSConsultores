@@ -33,7 +33,7 @@
     <ul id="menuBar">
       <li><a href="#!">Inicio</a></li>
       <li><a href="#!registrarIncapacidad">Registrar incapacidad</a></li>
-      <li><a href="#!verIncapacidades">Ver incapacidades</a></li>
+      <li><a href="admin">Ver incapacidades</a></li>
       <li><a href="#!analisis">Analisis de datos</a></li>
     </ul>
     <ul id="fillerBar">
@@ -56,4 +56,31 @@
     <div id="mainView" ng-view></div>
   </div>
 </body>
+
+<script>
+    window.onload = function() {
+
+      var chart = new CanvasJS.Chart("chartContainer", {
+        animationEnabled: true,
+        title: {
+          text: "Motivos Incapacidades Registradas"
+        },
+        data: [{
+          type: "pie",
+          startAngle: 240,
+          yValueFormatString: "##0.00\"%\"",
+          indexLabel: "{label} {y}",
+          dataPoints: [
+          {y: 50, label: "Dolor de Espalda"},
+          {y: 20, label: "Resfriado Común"},
+          {y: 10, label: "Fractura de Pierna"}
+          ]
+        }]
+      });
+      chart.render();
+
+    }
+  </script>
+
+
 </html>

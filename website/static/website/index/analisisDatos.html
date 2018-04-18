@@ -1,29 +1,5 @@
 <div>  
   <div class="container">
-    <script>
-      window.onload = function() {
-
-        var chart = new CanvasJS.Chart("chartContainer", {
-          animationEnabled: true,
-          title: {
-            text: "Motivos Incapacidades Registradas"
-          },
-          data: [{
-            type: "pie",
-            startAngle: 240,
-            yValueFormatString: "##0.00\"%\"",
-            indexLabel: "{label} {y}",
-            dataPoints: [
-              {y: 50, label: "Dolor de Espalda"},
-              {y: 20, label: "Resfriado Común"},
-              {y: 10, label: "Fractura de Pierna"}
-            ]
-          }]
-        });
-        chart.render();
-
-        }
-    </script>
     <div>
       <h2>Análisis y Estadísticas</h2>
       <br>
@@ -81,5 +57,28 @@
   
   </div>  
   <br>
-  
+      <script>
+      window.onload = function() {
+
+        var chart = new CanvasJS.Chart("chartContainer", {
+          animationEnabled: true,
+          title: {
+            text: "Motivos Incapacidades Registradas"
+          },
+          data: [{
+            type: "pie",
+            startAngle: 240,
+            yValueFormatString: "##0.00\"%\"",
+            indexLabel: "{label} {y}",
+            dataPoints: [
+              {y: 50, label: "Dolor de Espalda"},
+              {y: 20, label: "Resfriado Común"},
+              {y: 10, label: "Fractura de Pierna"}
+            ]
+          }]
+        });
+        chart.render();
+
+        }
+    </script>  
 </div> 
